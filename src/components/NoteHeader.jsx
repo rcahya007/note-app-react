@@ -3,7 +3,7 @@ import React from 'react';
 function NoteHeader({ onSearchHandler }) {
   return (
     <div className="flex justify-between items-center p-4 border-b-2 border-b-">
-      <a href="/" className="text-2xl font-bold text-white">
+      <a href="/note-app-react" className="text-2xl font-bold text-white">
         Notes
       </a>
       <input
