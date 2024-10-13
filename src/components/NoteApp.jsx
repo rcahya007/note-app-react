@@ -26,7 +26,7 @@ class NoteApp extends React.Component {
           id: +new Date(),
           title,
           body,
-          createdAt: +new Date(),
+          createdAt: new Date().toISOString(),
           archived: false,
         },
         ...prev.notes,
@@ -105,6 +105,7 @@ class NoteApp extends React.Component {
   }
 
   render() {
+    console.log(this.state.filteredNotes);
     return (
       <div className="bg-gray-950 h-full w-full min-h-screen min-w-screen">
         <NoteHeader onSearchHandler={this.onSearchHandler} />
